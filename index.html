@@ -1,0 +1,193 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>《人生七年》：14 个人，63 年人生</title><meta name="description" content="从 7 岁到 70 岁，他们最后活成了什么样？"><style>*{box-sizing:border-box;margin:0;padding:0}
+:root{--paper:#faf7f0;--ink:#22252a;--muted:#6b6f76;--accent:#1d4e89;--line:#e4ddcf;--card:#fffdf8}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;font-size:18px;line-height:1.9;max-width:720px;margin:0 auto;padding:0 20px 80px}
+h1,h2,h3{font-family:Georgia,"Songti SC","Noto Serif SC",serif;line-height:1.5;font-weight:700}
+h1{font-size:1.7rem;margin:1.6em 0 .6em}h2{font-size:1.35rem;margin:2.2em 0 .8em;padding-bottom:.4em;border-bottom:2px solid var(--ink)}
+h3{font-size:1.12rem;margin:1.6em 0 .5em}p{margin:.9em 0}ul,ol{margin:.9em 0 .9em 1.4em}li{margin:.45em 0}
+a{color:var(--accent);text-decoration:none}a:active{opacity:.6}
+.hero{padding:56px 0 30px;text-align:center}
+.hero .kicker{color:var(--muted);letter-spacing:.35em;font-size:.8rem;margin-bottom:14px}
+.hero h1{font-size:2rem;margin:0 0 12px;border:none;padding:0}
+.hero .sub{color:var(--muted);font-size:1.02rem}
+.nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:26px 0}
+.nav a{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 18px;font-size:.92rem;color:var(--ink)}
+.section-label{color:var(--muted);font-size:.85rem;letter-spacing:.25em;margin:44px 0 6px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+@media(max-width:480px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:block;color:var(--ink)}
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.card .bd{padding:14px 14px 16px}
+.card .nm{font-weight:700;font-size:1.05rem}.card .en{color:var(--muted);font-size:.82rem}
+.card .nick{display:inline-block;margin-top:8px;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:2px 12px}
+.card .sum{font-size:.88rem;color:var(--muted);margin-top:10px;line-height:1.7}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 4px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 16px;font-size:.88rem;color:var(--ink);cursor:pointer}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tl{position:relative;margin:18px 0 0;padding-left:26px;border-left:2px solid var(--line)}
+.tl details{margin:0 0 6px;position:relative}
+.tl details::before{content:"";position:absolute;left:-34px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:3px solid var(--accent)}
+.tl summary{cursor:pointer;list-style:none;font-weight:700;font-size:1.05rem;padding:10px 0;display:flex;justify-content:space-between;align-items:center}
+.tl summary::-webkit-details-marker{display:none}
+.tl summary .plus{color:var(--muted);font-weight:400}
+.tl details[open] summary .plus{transform:rotate(45deg)}
+.tl .body{padding:2px 0 18px;color:#33373d}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:18px 0}
+.meta div{background:var(--card);padding:10px 14px;font-size:.9rem}
+.meta .k{color:var(--muted);font-size:.78rem;display:block}
+.person-head{text-align:center;padding:40px 0 10px}
+.person-head img{width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 4px 18px rgba(0,0,0,.12)}
+.person-head .nick{font-size:1.05rem;color:var(--accent);margin-top:10px}
+.person-head .en{color:var(--muted)}
+.dead{color:#a33;font-weight:700}
+.compare-box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:14px 0}
+.foot-nav{display:flex;justify-content:space-between;margin:50px 0 0}
+.foot-nav a{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 18px;font-size:.92rem}
+.table-wrap{overflow-x:auto;margin:16px -20px;padding:0 20px}
+table{border-collapse:collapse;width:100%;font-size:.82rem;min-width:900px;background:var(--card)}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#f3eee1;white-space:nowrap}
+.group{margin:14px 0}.group h3{margin-bottom:4px}
+.back{display:inline-block;margin:26px 0 0;font-size:.95rem}
+.film{margin:22px 0}.film h3{margin:0 0 4px}.film p{color:var(--muted);font-size:.92rem}
+.note{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:40px;padding-top:16px}
+details.src{margin-top:30px}details.src summary{cursor:pointer;color:var(--muted)}
+</style></head><body>
+<div class="hero"><div class="kicker">UP SERIES · 1964—2026</div>
+<h1>《人生七年》：14 个人，63 年人生</h1>
+<div class="sub">从 7 岁到 70 岁，他们最后活成了什么样？</div>
+<div class="nav"><a href="#people">14 个人</a><a href="#films">10 部纪录片</a><a href="chapters.html">横向总结</a><a href="chapters.html#appendix-table">14 人总表</a></div></div>
+
+<div class="section-label" id="people">人物 · 按绰号记住他们</div>
+<div class="chips" id="filters"><button class="chip" data-f="精英家庭">精英家庭</button><button class="chip" data-f="工薪阶层">工薪阶层</button><button class="chip" data-f="儿童之家">儿童之家</button><button class="chip" data-f="上大学">上大学</button><button class="chip" data-f="没上大学">没上大学</button><button class="chip" data-f="离婚">离婚</button><button class="chip" data-f="再婚">再婚</button><button class="chip" data-f="移民">移民</button><button class="chip" data-f="心理健康问题">心理健康问题</button><button class="chip" data-f="已去世">已去世</button><button class="chip" data-f="退出过节目">退出过节目</button></div>
+<div class="cards" id="cards">
+<a class="card" href="person.html?id=andrew" data-tags="精英家庭 上大学 退休">
+<img src="avatars/andrew.jpg" alt="安德鲁·布拉克菲尔德卡通头像" loading="lazy">
+<div class="bd"><div class="nm">安德鲁·布拉克菲尔德</div>
+<div class="en">Andrew Brackfield</div>
+<span class="nick">人生按剧本走的精英律师</span>
+<div class="sum">一个7岁时就能背出自己一生的孩子，几乎一字不差地兑现了预言——查特豪斯公学、剑桥、律师事务所合伙人、同一个人生的妻子48年；63岁后才第一次承认，这份完美的人生，代价是孩子们长大的那些年他不在场。</div></div></a>
+
+<a class="card" href="person.html?id=john" data-tags="精英家庭 上大学 退出过节目 退休">
+<img src="avatars/john.jpg" alt="约翰·布里斯比卡通头像" loading="lazy">
+<div class="bd"><div class="nm">约翰·布里斯比</div>
+<div class="en">John Brisby</div>
+<span class="nick">最不买账的御用大律师</span>
+<div class="sum">7岁时全国人民眼里的&quot;小势利鬼&quot;，长大后成了英国顶尖商事大律师（御用大律师）；他是全系列里唯一敢在终章镜头前说&quot;我从来没喜欢过迈克尔·阿普特德&quot;的人，用了63年证明节目组把他拍错了。</div></div></a>
+
+<a class="card" href="person.html?id=charles" data-tags="精英家庭 上大学 退出过节目 退休">
+<img src="avatars/charles.jpg" alt="查尔斯·弗诺卡通头像" loading="lazy">
+<div class="bd"><div class="nm">查尔斯·弗诺</div>
+<div class="en">Charles Furneaux</div>
+<span class="nick">拒绝了半个世纪的幕后人</span>
+<div class="sum">7岁时被钉上&quot;肯辛顿三公子&quot;标签的男孩，21岁拍完《21 Up》就转身离开，此后49年拒绝一切采访和出镜，却在幕后成了英国最顶尖的纪录片制作人之一（监制过拿下BAFTA的《触摸虚空》）；2026年终章，他时隔49年开口——只出声音、不露脸。</div></div></a>
+
+<a class="card" href="person.html?id=suzy" data-tags="精英家庭 没上大学 退出过节目 退休">
+<img src="avatars/suzy.jpg" alt="苏西·拉斯克卡通头像" loading="lazy">
+<div class="bd"><div class="nm">苏西·拉斯克</div>
+<div class="en">Suzy Lusk</div>
+<span class="nick">不情愿的富家女孩</span>
+<div class="sum">全系列唯一的富家女孩：7岁是练芭蕾、想要&quot;两个孩子加一个保姆&quot;的小淑女，21岁变成镜头前不停抽烟、对婚姻嗤之以鼻的愤青；28岁结婚后整个人翻了篇——48年婚姻、三个孩子、四十多岁转行做丧亲辅导员；她恨了这节目63年，63岁那集直接罢演，70岁终章却为了去世的尼克回来了。</div></div></a>
+
+<a class="card" href="person.html?id=jackie" data-tags="工薪阶层 没上大学 离婚 有孙辈 退休">
+<img src="avatars/jackie.jpg" alt="杰基·巴塞特卡通头像" loading="lazy">
+<div class="bd"><div class="nm">杰基·巴塞特</div>
+<div class="en">Jackie Bassett</div>
+<span class="nick">向导演开火的东区妈妈</span>
+<div class="sum">一个7岁时靠话痨被选中的东区女孩，成年后离婚、丧母、患类风湿性关节炎、伴侣在癌症治疗期间车祸离世，却几十年敢当面质问导演的性别偏见；70岁搬到诺福克海岸重新开始，自称过着&quot;第二次童年&quot;，是&quot;很久以来最快乐&quot;的时候。</div></div></a>
+
+<a class="card" href="person.html?id=lynn" data-tags="工薪阶层 没上大学 已去世 有孙辈">
+<img src="avatars/lynn.jpg" alt="林恩·约翰逊卡通头像" loading="lazy">
+<div class="bd"><div class="nm">林恩·约翰逊 <span class="dead">（已故）</span></div>
+<div class="en">Lynn Johnson</div>
+<span class="nick">最早离场的老好人</span>
+<div class="sum">14 人里最稳的一个：7 岁说长大要去 Woolworths 当售货员，21 岁开着流动图书馆车给孩子们送书，在同一个岗位干了三十年，19 岁结婚一次到老；却是 14 人里第一个去世的，2013 年 5 月病逝，终年 57 岁，《70 Up》里只剩下一把&quot;空椅子&quot;。</div></div></a>
+
+<a class="card" href="person.html?id=sue" data-tags="工薪阶层 没上大学 离婚 再婚 退休">
+<img src="avatars/sue.jpg" alt="苏·戴维斯卡通头像" loading="lazy">
+<div class="bd"><div class="nm">苏·戴维斯</div>
+<div class="en">Sue Davis（现名 Sue Fitzgerald）</div>
+<span class="nick">最爱这节目的幸运儿</span>
+<div class="sum">三个东区女孩里最爱笑、也最爱这个节目的一个：没上过大学，却从秘书一路做到伦敦玛丽女王大学法学院的行政负责人，能站在 600 人的讲堂上讲话；35 岁离婚后单身带大两个孩子，与 Glenn 订婚 22 年后 2020 年结婚；70 岁退休搬到 Essex，自称&quot;除了离婚，人生一直平衡得不错&quot;。</div></div></a>
+
+<a class="card" href="person.html?id=paul" data-tags="儿童之家 没上大学 移民 有孙辈 退休">
+<img src="avatars/paul.jpg" alt="保罗·克利格曼卡通头像" loading="lazy">
+<div class="bd"><div class="nm">保罗·克利格曼</div>
+<div class="en">Paul Kligerman</div>
+<span class="nick">从儿童之家走到澳洲的建造者</span>
+<div class="sum">14 个人里起点最低、结局最稳的一个：父母离异后住进儿童之家，8 岁随父亲移民澳洲；21 岁时说&quot;我总觉得自己是个没用的人&quot;，后来当泥瓦匠、白手起家做建筑生意；1978 年结婚，一次婚结了 48 年没离，是全系列唯一没离过婚的人；70 岁在墨尔本附近当祖父，留给观众的话是&quot;善良，宽恕，诚实地活&quot;。</div></div></a>
+
+<a class="card" href="person.html?id=symon" data-tags="儿童之家 没上大学 离婚 再婚 有孙辈 退休">
+<img src="avatars/symon.jpg" alt="西蒙·巴斯特菲尔德卡通头像" loading="lazy">
+<div class="bd"><div class="nm">西蒙·巴斯特菲尔德</div>
+<div class="en">Symon Basterfield</div>
+<span class="nick">养过上百个孩子的父亲</span>
+<div class="sum">14 人里唯一的混血孩子：父亲从未出现，母亲患抑郁症，他在儿童之家和母亲之间长大；7 岁想当电影明星，21 岁在香肠厂流水线上被导演问&quot;你觉得自己不值更好的吗&quot;；28 岁骄傲地给了五个孩子&quot;一个爸爸&quot;，中年离婚缺席一集，再婚后与妻子做了约 20 年寄养父母，照顾过 100 多名寄养儿童；70 岁最大的遗憾，是从没问清父亲是谁。</div></div></a>
+
+<a class="card" href="person.html?id=neil" data-tags="上大学 离婚 心理健康问题 移民 退休">
+<img src="avatars/neil.jpg" alt="尼尔·休斯卡通头像" loading="lazy">
+<div class="bd"><div class="nm">尼尔·休斯</div>
+<div class="en">Neil Hughes</div>
+<span class="nick">人生最跌宕的聪明男孩</span>
+<div class="sum">7 岁时最聪明、最被看好的孩子之一，28 岁时却无家可归、在苏格兰高地流浪，42 岁起靠开放大学学位和地方政治慢慢爬回来，当了 21 年地方议员；70 岁时他独自住在法国一栋没有暖气的房子里，烧纸板取暖，自称“差不多是我这辈子能达到的最幸福状态”。</div></div></a>
+
+<a class="card" href="person.html?id=nick" data-tags="工薪阶层 上大学 离婚 再婚 移民 已去世 退休">
+<img src="avatars/nick.jpg" alt="尼克·希奇翁卡通头像" loading="lazy">
+<div class="bd"><div class="nm">尼克·希奇翁 <span class="dead">（已故）</span></div>
+<div class="en">Nick Hitchon</div>
+<span class="nick">约克郡农场的核科学家</span>
+<div class="sum">约克郡山谷里一个 6 岁就被选中的农场孩子，23 岁拿下牛津博士，42 岁成为美国核聚变教授，两度婚姻、一个儿子；2019 年在镜头前公布喉癌，医生说他活不过 2020 年，他多活了三年半，并在去世前 3 天录下给《70 Up》的最后访谈，成为全系列终章的泪点。</div></div></a>
+
+<a class="card" href="person.html?id=tony" data-tags="工薪阶层 没上大学 有孙辈 退休">
+<img src="avatars/tony.jpg" alt="托尼·沃克卡通头像" loading="lazy">
+<div class="bd"><div class="nm">托尼·沃克</div>
+<div class="en">Tony Walker</div>
+<span class="nick">没当成骑师的出租车司机</span>
+<div class="sum">7 岁时说“长大要当骑师”，14 岁时又补了一句“如果不行就去开出租车”——两句话全中了：他只跑了 3 场职业赛马就因超重退役，然后开了几十年伦敦出租车；1998 年在镜头前承认出轨，婚姻差点散了，但和妻子 Debbie 厮守 46 年；70 岁住在埃平森林的房车里半退休，说“人生最后九洞，我打得很开心”。</div></div></a>
+
+<a class="card" href="person.html?id=peter" data-tags="工薪阶层 上大学 离婚 再婚 退出过节目 退休 心理健康问题">
+<img src="avatars/peter.jpg" alt="彼得·戴维斯卡通头像" loading="lazy">
+<div class="bd"><div class="nm">彼得·戴维斯</div>
+<div class="en">Peter Davies</div>
+<span class="nick">骂过政府的乡村歌手</span>
+<div class="sum">利物浦工薪家庭的孩子，7 岁时和尼尔一起说要当宇航员，28 岁时在镜头前痛骂撒切尔政府，被小报围攻后退出节目 28 年；消失的岁月里他离婚、改学法律、进了公务员系统、再婚生子；56 岁为宣传自己的乡村乐队回归，70 岁时已是全职音乐人和作家，出了小说、写了音乐剧。</div></div></a>
+
+<a class="card" href="person.html?id=bruce" data-tags="精英家庭 上大学 退休">
+<img src="avatars/bruce.jpg" alt="布鲁斯·鲍尔登卡通头像" loading="lazy">
+<div class="bd"><div class="nm">布鲁斯·鲍尔登</div>
+<div class="en">Bruce Balden</div>
+<span class="nick">最知足的数学老师</span>
+<div class="sum">7 岁时说想去非洲当传教士、想见 6000 英里外当兵的爸爸；牛津数学系毕业后，他辞掉保险公司的工作，去伦敦东区教了一辈子数学；40 多岁才结婚，有两个儿子；70 岁时和妻子退休定居英格兰东北海岸，每天海边遛狗、唱诗班、救生艇义工，说“现在比这辈子任何时候都享受生活”。</div></div></a></div>
+
+<div class="section-label" id="map">记忆地图 · 第一次看的人先看这里</div>
+<div class="group"><h3>精英三人组</h3><p><strong>Andrew / John / Charles</strong> —— 私立学校、牛津剑桥，7 岁时就知道自己会上哪所大学。</p></div>
+<div class="group"><h3>东区三个女孩</h3><p><strong>Jackie / Lynn / Sue</strong> —— 伦敦东区工人家庭，19 岁前后结婚，人生在柴米油盐里展开。</p></div>
+<div class="group"><h3>儿童之家</h3><p><strong>Paul / Symon</strong> —— 都在 Twickenham 的 Shaftesbury 儿童之家住过，一个去了澳洲，一个成了寄养父亲。</p></div>
+<div class="group"><h3>最戏剧化人物</h3><p><strong>Neil</strong> —— 7 岁最聪明，28 岁流浪，70 岁在法国独居烧纸板取暖。</p></div>
+<div class="group"><h3>农场科学家</h3><p><strong>Nick</strong> —— 约克郡农场孩子，牛津物理博士，美国核聚变教授，2023 年去世。</p></div>
+<div class="group"><h3>骑师梦男孩</h3><p><strong>Tony</strong> —— 想当骑师只比了三场，开了一辈子伦敦出租车。</p></div>
+<div class="group"><h3>教师 / 音乐</h3><p><strong>Peter</strong> —— 利物浦教师，骂过政府，退出 28 年，回来组乐队写音乐剧。</p></div>
+<div class="group"><h3>牛津数学教师</h3><p><strong>Bruce</strong> —— 牛津数学系毕业，在伦敦东区教了一辈子数学，全系列最知足的人之一。</p></div>
+<div class="group"><h3>富裕家庭女孩</h3><p><strong>Suzy</strong> —— 富家女，低调了一辈子，做丧亲辅导员。</p></div>
+
+<div class="section-label" id="films">10 部纪录片 · 总时间轴</div>
+<div class="film"><h3>1964 ·《Seven Up!》· 7岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
+<div class="film"><h3>1970 ·《7 Plus Seven》· 14岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
+<div class="film"><h3>1977 ·《21 Up》· 21岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
+<div class="film"><h3>1984 ·《28 Up》· 28岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
+<div class="film"><h3>1991 ·《35 Up》· 35岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
+<div class="film"><h3>1998 ·《42 Up》· 42岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
+<div class="film"><h3>2005 ·《49 Up》· 49岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
+<div class="film"><h3>2012 ·《56 Up》· 56岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
+<div class="film"><h3>2019 ·《63 Up》· 63岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
+<div class="film"><h3>2026 ·《70 Up》· 70岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
+
+<div class="note">卡通头像为 AI 绘制的示意形象，非真人照片。人物资料综合 ITV 官方资料、BBC、The Guardian、The Independent、The Times、Radio Times 及参与者本人采访整理，详见<a href="chapters.html#sources">资料来源</a>。</div>
+<script>
+const chips=[...document.querySelectorAll('.chip')],cards=[...document.querySelectorAll('.card')];
+chips.forEach(c=>c.addEventListener('click',()=>{
+  c.classList.toggle('on');
+  const on=chips.filter(x=>x.classList.contains('on')).map(x=>x.dataset.f);
+  cards.forEach(k=>{k.style.display=(!on.length||on.every(f=>k.dataset.tags.includes(f)))?'':'none'});
+}));
+</script></body></html>
