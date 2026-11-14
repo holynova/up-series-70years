@@ -24,6 +24,7 @@ a{color:var(--accent);text-decoration:none}a:active{opacity:.6}
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 4px}
 .chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 16px;font-size:.88rem;color:var(--ink);cursor:pointer}
 .chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.empty{text-align:center;color:var(--muted);font-size:.95rem;padding:28px 0}
 .tl{position:relative;margin:18px 0 0;padding-left:26px;border-left:2px solid var(--line)}
 .tl details{margin:0 0 6px;position:relative}
 .tl details::before{content:"";position:absolute;left:-34px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:3px solid var(--accent)}
@@ -63,14 +64,14 @@ details.src{margin-top:30px}details.src summary{cursor:pointer;color:var(--muted
 <div class="nav"><a href="#people">14 个人</a><a href="#films">10 部纪录片</a><a href="chapters.html">横向总结</a><a href="chapters.html#appendix-table">14 人总表</a></div></div>
 
 <div class="section-label" id="people">人物 · 按绰号记住他们</div>
-<div class="chips" id="filters"><button class="chip" data-f="精英家庭">精英家庭</button><button class="chip" data-f="工薪阶层">工薪阶层</button><button class="chip" data-f="儿童之家">儿童之家</button><button class="chip" data-f="上大学">上大学</button><button class="chip" data-f="没上大学">没上大学</button><button class="chip" data-f="离婚">离婚</button><button class="chip" data-f="再婚">再婚</button><button class="chip" data-f="移民">移民</button><button class="chip" data-f="心理健康问题">心理健康问题</button><button class="chip" data-f="已去世">已去世</button><button class="chip" data-f="退出过节目">退出过节目</button></div>
+<div class="chips" id="filters"><button class="chip" data-f="精英家庭">精英家庭</button><button class="chip" data-f="工薪阶层">工薪阶层</button><button class="chip" data-f="儿童之家">儿童之家</button><button class="chip" data-f="上大学">上大学</button><button class="chip" data-f="没上大学">没上大学</button><button class="chip" data-f="离婚">离婚</button><button class="chip" data-f="再婚">再婚</button><button class="chip" data-f="移民">移民</button><button class="chip" data-f="心理健康问题">心理健康问题</button><button class="chip" data-f="已去世">已去世</button><button class="chip" data-f="退出过节目">退出过节目</button><button class="chip" id="clearFilters">清除筛选 ✕</button></div>
 <div class="cards" id="cards">
 <a class="card" href="person.html?id=andrew" data-tags="精英家庭 上大学 退休">
 <img src="avatars/andrew.jpg" alt="安德鲁·布拉克菲尔德卡通头像" loading="lazy">
 <div class="bd"><div class="nm">安德鲁·布拉克菲尔德</div>
 <div class="en">Andrew Brackfield</div>
 <span class="nick">人生按剧本走的精英律师</span>
-<div class="sum">一个7岁时就能背出自己一生的孩子，几乎一字不差地兑现了预言——查特豪斯公学、剑桥、律师事务所合伙人、同一个人生的妻子48年；63岁后才第一次承认，这份完美的人生，代价是孩子们长大的那些年他不在场。</div></div></a>
+<div class="sum">一个7岁时就能背出自己一生的孩子，几乎一字不差地兑现了预言——查特豪斯公学、剑桥、律师事务所合伙人、同一个妻子48年；63岁后才第一次承认，这份完美的人生，代价是孩子们长大的那些年他不在场。</div></div></a>
 
 <a class="card" href="person.html?id=john" data-tags="精英家庭 上大学 退出过节目 退休">
 <img src="avatars/john.jpg" alt="约翰·布里斯比卡通头像" loading="lazy">
@@ -119,7 +120,7 @@ details.src{margin-top:30px}details.src summary{cursor:pointer;color:var(--muted
 <div class="bd"><div class="nm">保罗·克利格曼</div>
 <div class="en">Paul Kligerman</div>
 <span class="nick">从儿童之家走到澳洲的建造者</span>
-<div class="sum">14 个人里起点最低、结局最稳的一个：父母离异后住进儿童之家，8 岁随父亲移民澳洲；21 岁时说&quot;我总觉得自己是个没用的人&quot;，后来当泥瓦匠、白手起家做建筑生意；1978 年结婚，一次婚结了 48 年没离，是全系列唯一没离过婚的人；70 岁在墨尔本附近当祖父，留给观众的话是&quot;善良，宽恕，诚实地活&quot;。</div></div></a>
+<div class="sum">14 个人里起点最低、结局最稳的一个：父母离异后住进儿童之家，8 岁随父亲移民澳洲；21 岁时说&quot;我总觉得自己是个没用的人&quot;，后来当泥瓦匠、白手起家做建筑生意；1978 年结婚，一次婚结了 48 年没离；70 岁在墨尔本附近当祖父，留给观众的话是&quot;善良，宽恕，诚实地活&quot;。</div></div></a>
 
 <a class="card" href="person.html?id=symon" data-tags="儿童之家 没上大学 离婚 再婚 有孙辈 退休">
 <img src="avatars/symon.jpg" alt="西蒙·巴斯特菲尔德卡通头像" loading="lazy">
@@ -162,6 +163,7 @@ details.src{margin-top:30px}details.src summary{cursor:pointer;color:var(--muted
 <div class="en">Bruce Balden</div>
 <span class="nick">最知足的数学老师</span>
 <div class="sum">7 岁时说想去非洲当传教士、想见 6000 英里外当兵的爸爸；牛津数学系毕业后，他辞掉保险公司的工作，去伦敦东区教了一辈子数学；40 多岁才结婚，有两个儿子；70 岁时和妻子退休定居英格兰东北海岸，每天海边遛狗、唱诗班、救生艇义工，说“现在比这辈子任何时候都享受生活”。</div></div></a></div>
+<p class="empty" id="noMatch" hidden>没有同时符合这些条件的人，试试减少筛选条件。</p>
 
 <div class="section-label" id="map">记忆地图 · 第一次看的人先看这里</div>
 <div class="group"><h3>精英三人组</h3><p><strong>Andrew / John / Charles</strong> —— 私立学校、牛津剑桥，7 岁时就知道自己会上哪所大学。</p></div>
@@ -175,23 +177,27 @@ details.src{margin-top:30px}details.src summary{cursor:pointer;color:var(--muted
 <div class="group"><h3>富裕家庭女孩</h3><p><strong>Suzy</strong> —— 富家女，低调了一辈子，做丧亲辅导员。</p></div>
 
 <div class="section-label" id="films">10 部纪录片 · 总时间轴</div>
-<div class="film"><h3>1964 ·《Seven Up!》· 7岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
-<div class="film"><h3>1970 ·《7 Plus Seven》· 14岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
-<div class="film"><h3>1977 ·《21 Up》· 21岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
-<div class="film"><h3>1984 ·《28 Up》· 28岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
-<div class="film"><h3>1991 ·《35 Up》· 35岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
-<div class="film"><h3>1998 ·《42 Up》· 42岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
-<div class="film"><h3>2005 ·《49 Up》· 49岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
-<div class="film"><h3>2012 ·《56 Up》· 56岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
-<div class="film"><h3>2019 ·《63 Up》· 63岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
-<div class="film"><h3>2026 ·《70 Up》· 70岁</h3><p>点击人物卡片，在每个人页面里看这一集发生了什么。</p></div>
+<div class="film"><h3>1964 ·《Seven Up!》· 7岁</h3><p>14 个 7 岁孩子第一次坐到镜头前，节目想验证“7 岁看老”。</p></div>
+<div class="film"><h3>1970 ·《7 Plus Seven》· 14岁</h3><p>阿普特德接手导演；孩子们 14 岁，阶级对照开始显形。</p></div>
+<div class="film"><h3>1977 ·《21 Up》· 21岁</h3><p>大家成年了；查尔斯最后一次完整出镜，此后退出 49 年。</p></div>
+<div class="film"><h3>1984 ·《28 Up》· 28岁</h3><p>约翰第一次拒绝出镜；彼得在镜头前痛骂撒切尔政府，随后被小报围攻。</p></div>
+<div class="film"><h3>1991 ·《35 Up》· 35岁</h3><p>约翰有条件回归；西蒙因离婚缺席这一集。</p></div>
+<div class="film"><h3>1998 ·《42 Up》· 42岁</h3><p>全系列唯一在 BBC One 播出的一集；约翰再次缺席；尼克已是美国核聚变教授。</p></div>
+<div class="film"><h3>2005 ·《49 Up》· 49岁</h3><p>尼尔靠开放大学学位和地方政治爬回来，当选地方议员；彼得仍在缺席中。</p></div>
+<div class="film"><h3>2012 ·《56 Up》· 56岁</h3><p>彼得为宣传自己的乡村乐队回归；林恩最后一次出镜，次年去世。</p></div>
+<div class="film"><h3>2019 ·《63 Up》· 63岁</h3><p>阿普特德最后一部；苏西缺席；尼克在镜头前公布喉癌。</p></div>
+<div class="film"><h3>2026 ·《70 Up》· 70岁</h3><p>终章，卡帕迪亚接手；12 位在世者全部参加，查尔斯只出声音；尼克以生前访谈谢幕。</p></div>
 
 <div class="note">卡通头像为 AI 绘制的示意形象，非真人照片。人物资料综合 ITV 官方资料、BBC、The Guardian、The Independent、The Times、Radio Times 及参与者本人采访整理，详见<a href="chapters.html#sources">资料来源</a>。 · <a href="https://github.com/holynova/up-series-70years" target="_blank" rel="noopener">GitHub 仓库</a></div>
 <script>
-const chips=[...document.querySelectorAll('.chip')],cards=[...document.querySelectorAll('.card')];
-chips.forEach(c=>c.addEventListener('click',()=>{
-  c.classList.toggle('on');
+const chips=[...document.querySelectorAll('#filters .chip[data-f]')],cards=[...document.querySelectorAll('.card')];
+const noMatch=document.getElementById('noMatch');
+function applyFilter(){
   const on=chips.filter(x=>x.classList.contains('on')).map(x=>x.dataset.f);
-  cards.forEach(k=>{k.style.display=(!on.length||on.every(f=>k.dataset.tags.includes(f)))?'':'none'});
-}));
+  let shown=0;
+  cards.forEach(k=>{const show=(!on.length||on.every(f=>k.dataset.tags.includes(f)));k.style.display=show?'':'none';if(show)shown++;});
+  noMatch.hidden=shown>0;
+}
+chips.forEach(c=>c.addEventListener('click',()=>{c.classList.toggle('on');applyFilter();}));
+document.getElementById('clearFilters').addEventListener('click',()=>{chips.forEach(x=>x.classList.remove('on'));applyFilter();});
 </script></body></html>
